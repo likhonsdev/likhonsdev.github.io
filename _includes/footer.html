@@ -1,0 +1,37 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="wrapper">
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+    <div class="footer-powered-by" style="text-align: center; padding-top: 15px; border-top: 1px solid #e8e8e8; margin-top: 15px;">
+      <span style="display: block; margin-bottom: 10px;">Hosted & Deployed with</span>
+      <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style="margin: 0 15px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/147px-Vercel_logo_black.svg.png" alt="Vercel Logo" style="height: 28px; vertical-align: middle;">
+      </a>
+      <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer" style="margin: 0 15px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cloudflare_Logo.svg/167px-Cloudflare_Logo.svg.png" alt="Cloudflare Logo" style="height: 28px; vertical-align: middle;">
+      </a>
+    </div>
+  </div>
+</footer>
