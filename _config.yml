@@ -6,3 +6,4 @@ theme: minima
 header_pages:
   - blog.md
   - skills.md
+  - services.md
