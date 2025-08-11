@@ -2,3 +2,6 @@ title: "Łikhon Sheikh"
 author: "likhonsdev"
 description: "Cybersecurity / Gray Hat / Programmer"
 theme: minima
+
+header_pages:
+  - blog.md
